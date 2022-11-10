@@ -92,7 +92,9 @@ public abstract class Pair_TSeries_Indicator : TSeries
         for (int i = 0; i < d1.Count; i++) { this.Add(d1[i], d2[i], update: false); }
     }
     public virtual void Add(TSeries d1, double dd2) {
-        for (int i = 0; i < d1.Count; i++) { this.Add(d1[i], (d1[i].t, dd2), update: false); }
+        for (int i = 0; i < d1.Count; i++) { 
+            this.Add(d1[i], (d1[i].t, dd2), update: false);
+        }
     }
     public virtual void Add(double dd1, TSeries d2) {
         for (int i = 0; i < d2.Count; i++) { this.Add((d2[i].t, dd1), d2[i], update: false); }
