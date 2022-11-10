@@ -1,7 +1,7 @@
 sonar.projectKey=vquirozuni_Proyecto_Metricas
 sonar.organization=vquirozuni
-sonar.sources=src
-sonar.test=src
-sonar.test.inclusions=**/*.spec.ts
-sonar.javascript.lcov.reportPaths=coverage/lcov.info
+sonar.projectName= QuanTAlib
+sonar.sources=.
+sonar.language=cs
+sonar.dotnet.visualstudio.solution.file=QuanTAlib.sln
 sonar.sourceEncoding=UTF-8
